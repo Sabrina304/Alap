@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Alap</string>
+    <string name="home">Home</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_an_user_login">Already an user? Login</string>
+    <string name="emaillogin">Email</string>
+    <string name="passwordlogin">Password</string>
+    <string name="login">Login</string>
+    <string name="not_yet_registered_signup">Not yet registered? Signup</string>
+    <string name="alap">Alap</string>
+    <string name="at_your_service">At your service</string>
+    <string name="check_yourself">Check Yourself</string>
+    <string name="make_reminder">Make Reminder</string>
+    <string name="article">article</string>
+    <string name="game">game</string>
+    <string name="article_list">Article List</string>
+    <string name="quiz">Quiz</string>
+</resources>
