@@ -18,4 +18,6 @@
     <string name="game">game</string>
     <string name="article_list">Article List</string>
     <string name="quiz">Quiz</string>
+    <string name="let_s_take_a_screening_test_click_below_to_proceed">Let\'s Take a screening test. Click below to proceed</string>
+    <string name="click_me">Click me</string>
 </resources>

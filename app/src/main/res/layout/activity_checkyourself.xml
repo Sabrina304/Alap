@@ -7,13 +7,26 @@
     tools:context=".CheckyourselfActivity">
 
     <TextView
+        android:id="@+id/quiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/quiz"
-        android:text="@string/quiz"
-        android:textSize="36sp"
-        android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
+        android:text="@string/let_s_take_a_screening_test_click_below_to_proceed"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proceedBtn"
+        android:text="@string/click_me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/quiz"
+        app:layout_constraintVertical_bias="0.74" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
