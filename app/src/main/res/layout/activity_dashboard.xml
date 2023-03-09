@@ -95,6 +95,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:id="@+id/reminder"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
                 app:cardCornerRadius="20dp">
@@ -106,7 +107,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/reminder"
+                        android:id="@+id/remindertext"
                         android:text="@string/make_reminder"
                         android:textSize="20sp"
                         android:layout_marginTop="10dp"

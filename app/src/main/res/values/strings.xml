@@ -20,4 +20,22 @@
     <string name="quiz">Quiz</string>
     <string name="let_s_take_a_screening_test_click_below_to_proceed">Let\'s Take a screening test. Click below to proceed</string>
     <string name="click_me">Click me</string>
+    <string name="guess_the_fruit">Guess The fruit</string>
+    <string name="restart">Restart</string>
+    <string name="_0_7">0/7</string>
+    <string name="points">Points:</string>
+    <string name="guess_the_celebrity">Guess The Celebrity</string>
+    <string name="guess_which_one_is_fruit">Guess Which one is fruit?</string>
+    <string name="todo">TODO</string>
+    <string name="enter_name_here">Enter name here</string>
+    <string name="update_user">Update user</string>
+    <string name="enter_name_here2">Enter name here</string>
+    <string name="add_new_user">Add new user</string>
+    <string name="please_take_the_medicines_on_time_navoid_snoozing_the_reminder">Please take the medicines on time.\nAvoid snoozing the reminder.</string>
+    <string name="snooze_alarm">Snooze Alarm</string>
+    <string name="took_medicine">Took Medicine</string>
+    <string name="please_take_the_following_medicine">Please take the following medicine</string>
+    <string name="medicine_name">Medicine Name</string>
+    <string name="qty_10">Qty: 10</string>
+    <string name="_10_45_pm">10:45 PM</string>
 </resources>
