@@ -35,14 +35,6 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        checkCard = findViewById(R.id.reminder);
-        checkCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),ReminderMainActivity.class);
-                startActivity(intent);
-            }
-        });
 
 
 

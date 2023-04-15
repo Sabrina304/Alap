@@ -38,4 +38,12 @@
     <string name="medicine_name">Medicine Name</string>
     <string name="qty_10">Qty: 10</string>
     <string name="_10_45_pm">10:45 PM</string>
+    <string name="empty_users" />
+    <string name="quizapp" />
+    <string name="angel_jude_suarez" />
+    <string name="suarez081119_gmail_com" />
+    <string name="glenn_azuelo" />
+    <string name="start" />
+    <string name="enter_name">Enter name</string>
+    <string name="_0">0</string>
 </resources>
