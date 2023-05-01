@@ -3,44 +3,57 @@ package com.example.alap;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class QuestionsActivity extends AppCompatActivity {
+
+    ImageView ivQuestion;
+    int currentQuestion = 0;
     TextView tv;
     Button submitbutton, quitbutton;
     RadioGroup radio_g;
     RadioButton rb1,rb2,rb3,rb4;
+    private int[] questionImages = {
+            R.drawable.clock,
+            R.drawable.difpic,
+            R.drawable.shapes,
+            R.drawable.dial,
+            R.drawable.table,
+            R.drawable.rain,
+
+    };
 
     String questions[] = {
-            "Which method can be defined only once in a program?",
-            "Which of these is not a bitwise operator?",
-            "Which keyword is used by method to refer to the object that invoked it?",
-            "Which of these keywords is used to define interfaces in Java?",
-            "Which of these access specifiers can be used for an interface?",
-            "Which of the following is correct way of importing an entire package ‘pkg’?",
-            "What is the return type of Constructors?",
-            "Which of the following package stores all the standard java classes?",
-            "Which of these method of class String is used to compare two String objects for their equality?",
-            "An expression involving byte, int, & literal numbers is promoted to which of these?"
+            "What time is it in the clock??",
+            "Which Picture is different from others?",
+            "Which shape is different from others",
+            "Which part incompletes the clock?",
+            "12*4 = ?",
+            "Rahim has to go for buying a shirt but it's raining outside and he" +
+                    "doesn't have umbrella.Weather forecasts says it will stop in" +
+                    "1 hours. Then what can he do? ",
+
+
+
+
     };
-    String answers[] = {"main method","<=","this","interface","public","import pkg.*","None of the mentioned","java","equals()","int"};
+    String answers[] = {"10 am/pm","D","C","Minute & Hour Dial","48","Wait for 2 hour"};
     String opt[] = {
-            "finalize method","main method","static method","private method",
-            "&","&=","|=","<=",
-            "import","this","catch","abstract",
-            "Interface","interface","intf","Intf",
-            "public","protected","private","All of the mentioned",
-            "Import pkg.","import pkg.*","Import pkg.*","import pkg.",
-            "int","float","void","None of the mentioned",
-            "lang","java","util","java.packages",
-            "equals()","Equals()","isequal()","Isequal()",
-            "int","long","byte","float"
+            "10 am/pm","12 am/pm","7 am/pm","9 am/pm",
+            "A","B","C","D",
+            "A","B","C","D",
+            "No Dial","Second & Hour Dial","Second & Minute Dial","Minute & Hour Dial",
+            "46","35","48","50",
+            "Wait for 1 hour","Order online","Buy a umbrella","Sleep",
+
     };
     int flag=0;
     public static int marks=0,correct=0,wrong=0;
@@ -49,6 +62,7 @@ public class QuestionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
 
+
         final TextView score = (TextView)findViewById(R.id.textView4);
         Intent intent = getIntent();
 
@@ -56,7 +70,10 @@ public class QuestionsActivity extends AppCompatActivity {
 
         submitbutton=(Button)findViewById(R.id.button3);
         quitbutton=(Button)findViewById(R.id.buttonquit);
+        ivQuestion = findViewById(R.id.ivQuestion);
         tv=(TextView) findViewById(R.id.tvque);
+
+        ivQuestion.setImageResource(questionImages[flag]);
 
         radio_g=(RadioGroup)findViewById(R.id.answersgrp);
         rb1=(RadioButton)findViewById(R.id.radioButton);
@@ -71,8 +88,13 @@ public class QuestionsActivity extends AppCompatActivity {
         submitbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //int color = mBackgroundColor.getColor();
-                //mLayout.setBackgroundColor(color);
+               // currentQuestion++;
+
+                //if (currentQuestion >= questionImages.length) {
+                //    currentQuestion = 0;
+                //}
+               // ivQuestion.setImageResource(questionImages[currentQuestion]);
+
 
                 if(radio_g.getCheckedRadioButtonId()==-1)
                 {
@@ -98,6 +120,8 @@ public class QuestionsActivity extends AppCompatActivity {
 
                 if(flag<questions.length)
                 {
+
+                    ivQuestion.setImageResource(questionImages[flag]);
                     tv.setText(questions[flag]);
                     rb1.setText(opt[flag*4]);
                     rb2.setText(opt[flag*4 +1]);

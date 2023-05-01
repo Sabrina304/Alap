@@ -3,18 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/page">
 
+    <ImageView
+        android:id="@+id/ivQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="350dp"
+        android:maxHeight="350dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="3dp"/>
 
     <TextView
+        android:id="@+id/DispName"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/DispName"
-        android:textColor="@color/accent_material_light"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="208dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -34,6 +49,8 @@
             android:text="A"
             android:id="@+id/radioButton"
             android:checked="false"
+            android:textColor="@color/white"
+
             />
 
         <RadioButton
@@ -41,46 +58,62 @@
             android:layout_height="wrap_content"
             android:text="B"
             android:id="@+id/radioButton2"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="@color/white"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="C"
             android:id="@+id/radioButton3"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="@color/white"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="D"
             android:id="@+id/radioButton4"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="@color/white"/>
 
     </RadioGroup>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Next Question"
         android:id="@+id/button3"
-        android:layout_marginTop="27dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/answersgrp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-       />
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+
+        android:background="@drawable/oval"
+        android:text="Next Question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
+        android:id="@+id/buttonquit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quit"
-        android:id="@+id/buttonquit"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/button3"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="#01579B"
-        android:textColor="#ffffff" />
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:background="@drawable/oval"
+        android:text="Quit"
+        android:textColor="#ffffff"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,26 +123,32 @@
         android:layout_marginBottom="52dp"
         android:layout_above="@+id/answersgrp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:text="Your Score"
         android:id="@+id/textView3"
-        android:textColor="#000000"
-        android:textSize="19dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"/>
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:id="@+id/textView4"
-        android:text="0"
-        android:textColor="#000000"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:textAlignment="center"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginBottom="26dp"
+        android:text="Your Score"
+        android:textColor="@color/white"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="22dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="19dp" />
 
 </RelativeLayout>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/login"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -32,10 +33,12 @@
                     android:layout_height="60dp"
                     android:layout_marginTop="30dp"
                     android:autofillHints="emailAddress"
+                    android:background="@drawable/border"
                     android:drawableStart="@drawable/ic_baseline_email_24"
                     android:drawablePadding="8dp"
-                    android:hint="@string/emaillogin"
-                    android:padding="8dp" />
+                    android:hint="UserName"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
 
                 <EditText
                     android:id="@+id/login_password"
@@ -43,11 +46,13 @@
                     android:layout_height="60dp"
                     android:layout_marginTop="20dp"
                     android:autofillHints="password"
+                    android:background="@drawable/border"
                     android:drawableStart="@drawable/ic_baseline_lock_24"
                     android:drawablePadding="8dp"
                     android:hint="@string/passwordlogin"
                     android:inputType="textPassword"
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
 
                 <Button
                     android:id="@+id/login_button"
@@ -56,7 +61,8 @@
                     android:layout_marginTop="30dp"
                     android:text="@string/login"
                     android:textSize="18sp"
-                    app:cornerRadius="30dp" />
+                    app:cornerRadius="30dp"
+                    />
 
                 <TextView
                     android:id="@+id/signupRedirectText"
@@ -66,6 +72,7 @@
                     android:layout_marginTop="14dp"
                     android:padding="8dp"
                     android:text="@string/not_yet_registered_signup"
+                    android:textColor="@color/white"
                     android:textSize="18sp" />
 
             </LinearLayout>

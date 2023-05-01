@@ -10,7 +10,7 @@ import android.view.View;
 public class DashboardActivity extends AppCompatActivity {
     CardView articleCard;
     CardView checkCard;
-    CardView reminder;
+    CardView reminderCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,15 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),CheckyourselfActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        reminderCard=findViewById(R.id.reminderCard);
+        reminderCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),RemindActivity.class);
                 startActivity(intent);
             }
         });

@@ -46,4 +46,6 @@
     <string name="start" />
     <string name="enter_name">Enter name</string>
     <string name="_0">0</string>
+    <string name="remind_things">Remind Things</string>
+    <string name="UserName" />
 </resources>

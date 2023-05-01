@@ -33,7 +33,7 @@ public class ScreeningTestActivity extends AppCompatActivity {
 
         Button startbutton=(Button)findViewById(R.id.button);
         countdownText = findViewById(R.id.countdown_text);
-        timeLeftInMillis = 10000;
+        timeLeftInMillis = 120000;
 
         countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
             @Override
